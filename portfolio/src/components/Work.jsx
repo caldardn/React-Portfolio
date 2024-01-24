@@ -1,6 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
-import { jsPDF } from "jspdf";
+import pdf from "../assets/Resume.pdf"; 
 
 const data = [
   {
@@ -40,13 +40,6 @@ const data = [
   },
 ];
 
-const generatePDF = () => {
-  const doc = new jsPDF();
-  doc.text("Davids Shit", 10, 10); 
-
-  doc.save("Resume.pdf");
-};
-
 const Work = () => {
   return (
     <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
@@ -60,14 +53,13 @@ const Work = () => {
           details={item.details}
         />
       ))}
-      <button
-        onClick={generatePDF}
-        className="bg-[#001b5e] text-white mt-4 w-full p-4 rounded-lg"
-      >
-        Download Resume
-      </button>
+      <a href={pdf} className="bg-[#001b5e] text-white mt-4 w-fell p-4 rounded-lg">
+            Download Resume
+        </a>
     </div>
+    
   );
+  
 };
 
 export default Work;
