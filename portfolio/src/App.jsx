@@ -11,9 +11,9 @@ function App() {
   return (
     <div>
       <Sidenav />
-      <Main />  
+      <Main />
+      <Projects />  
       <Work />
-      <Projects />
       <Contact />
       <Footer />
     </div>

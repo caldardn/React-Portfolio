@@ -67,38 +67,61 @@ const Sidenav = () => {
           <a
             href="#main"
             onClick={() => setActiveLink("main")}
-            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 ${
+            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 group ${
               activeLink === "main" ? "bg-indigo-500 text-white" : ""
             }`}
           >
-            <AiOutlineHome size={20} />
+            <div className="group-hover:opacity-100 transition-opacity">
+              <AiOutlineHome size={20} />
+            </div>
+            <div className="pl-4 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              Home
+            </div>
           </a>
-          <a
-            href="#work"
-            onClick={() => setActiveLink("work")}
-            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 ${
-              activeLink === "work" ? "bg-indigo-500 text-white" : ""
-            }`}
-          >
-            <GrProjects size={20} />
-          </a>
+
           <a
             href="#projects"
             onClick={() => setActiveLink("projects")}
-            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 ${
+            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 group ${
               activeLink === "projects" ? "bg-indigo-500 text-white" : ""
             }`}
           >
-            <AiOutlineProject size={20} />
+            <div>
+              <AiOutlineProject size={20} />
+            </div>
+            <div className="pl-4 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              Projects/Me
+            </div>
           </a>
+
+          <a
+            href="#work"
+            onClick={() => setActiveLink("work")}
+            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 group ${
+              activeLink === "work" ? "bg-indigo-500 text-white" : ""
+            }`}
+          >
+            <div className="group-hover:opacity-100 transition-opacity">
+              <GrProjects size={20} />
+            </div>
+            <div className="pl-4 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              Resume
+            </div>
+          </a>
+
           <a
             href="#contact"
             onClick={() => setActiveLink("contact")}
-            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 ${
+            className={`rounded-full shadow-lg bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 group ${
               activeLink === "contact" ? "bg-indigo-500 text-white" : ""
             }`}
           >
-            <AiOutlineMail size={20} />
+            <div>
+              <AiOutlineMail size={20} />
+            </div>
+            <div className="pl-4 text-xs opacity-0 group-hover:opacity-100 transition-opacity">
+              Contact
+            </div>
           </a>
         </div>
       </div>
