@@ -1,50 +1,51 @@
 import React from "react";
 import WorkItem from "./WorkItem";
+import { jsPDF } from "jspdf";
 
 const data = [
   {
-    year: "2021",
-    title: "Project 1",
-    duration: "2 years",
+    year: "2023-2024",
+    title: "Full Stack Developer Student",
+    duration: "1 year",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      "I am currently enrolled in the Full Stack Developer program at University of Richmond. I am learning the MERN stack, HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, Git, and will be graduating in 2024.",
   },
   {
-    year: "2021",
-    title: "Project 2",
+    year: "2021-Present",
+    title: "QA Auditor II",
     duration: "2 years",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      "I conduct complex internal and external audits and inspections to ensure compliance with established quality assurance processes, standards, global regulatory guidelines, and client contractual obligations",
   },
   {
-    year: "2021",
-    title: "Project 3",
-    duration: "2 years",
+    year: "2020-2021",
+    title: "Scientist",
+    duration: "1.5 years",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      "Reviewed analyst documentation to ensure proper execution of methods and protocols. Entered and compiled data to produce well-organized interim and final reports to be sent to clients ",
   },
   {
-    year: "2021",
-    title: "Project 4",
+    year: "2018-2020",
+    title: "Associate Scientist",
     duration: "2 years",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      "Maintained efficient managing and tracking of thousands of clinical samples through the use of Excel, PPDs LIMS, and TrackWise. Also held an essential role in a project in which the processing, testing, and data analysis of 3,000 clinical samples were successfully completed within one month",
   },
   {
-    year: "2021",
-    title: "Project 5",
-    duration: "2 years",
+    year: "2017-2018",
+    title: "Assistant Scientist",
+    duration: "1.5 years",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-  },
-  {
-    year: "2021",
-    title: "Project 6",
-    duration: "2 years",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      "Performed a variety of complex sample preparation and analysis procedures to quantitatively measure pharmaceutical and biopharmaceutical compounds in a variety of formulations and/or biological matrices.",
   },
 ];
+
+const generatePDF = () => {
+  const doc = new jsPDF();
+  doc.text("Davids Shit", 10, 10); 
+
+  doc.save("Resume.pdf");
+};
 
 const Work = () => {
   return (
@@ -59,6 +60,12 @@ const Work = () => {
           details={item.details}
         />
       ))}
+      <button
+        onClick={generatePDF}
+        className="bg-[#001b5e] text-white mt-4 w-full p-4 rounded-lg"
+      >
+        Download Resume
+      </button>
     </div>
   );
 };
