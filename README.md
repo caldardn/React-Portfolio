@@ -16,7 +16,7 @@ This single-page application is my own personal portfolio. The sections are: abo
   
 Below is a video and images of the application:
   
-[React-Portfolio](https://boisterous-dango-5d57d9.netlify.app/)
+[React-Portfolio](https://main--boisterous-dango-5d57d9.netlify.app/)
 <br>
 </br>
 
