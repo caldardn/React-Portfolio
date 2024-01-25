@@ -13,9 +13,10 @@ const Main = () => {
       height: '100vh',
       
     }}
+    
     >
 
-      <div className=""></div>
+      
       <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
         <h1 className="sm:text-5xl text-4xl font-bold text-white flex justify-center">I'm David Caldarone</h1>
         <h2 className="text-white sm:text-3xl text-2xl pt-4 text-grey-800">
