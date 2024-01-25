@@ -6,9 +6,9 @@ const data = [
   {
     year: "2023-2024",
     title: "Full Stack Developer Student",
-    duration: "1 year",
+    duration: "6 months",
     details:
-      "I am currently enrolled in the Full Stack Developer program at University of Richmond. I am learning the MERN stack, HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, Git, and will be graduating in 2024.",
+      "I am currently enrolled in the Full Stack Developer program at University of Richmond. I am learning MERN stack, HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, and Git. I am on track to complete my certificate by the end of February 2024.",
   },
   {
     year: "2021-Present",

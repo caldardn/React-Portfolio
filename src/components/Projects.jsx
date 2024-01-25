@@ -31,14 +31,14 @@ const Project = () => {
         <ProjectItem
           img={lofiImg}
           title="Lofi App"
-          link="https://github.com/EMK2473/calliope-commonplace"
+          link="https://emk2473.github.io/calliope-commonplace/"
           imgWidth="448"
           imgHeight="336"
         />
         <ProjectItem
           img={travelImg}
           title="Travel-Blog App"
-          link="https://github.com/RuckusEnjoyer/travel-blog"
+          link="https://guarded-plateau-06638-3f412fce1c4c.herokuapp.com/"
         />
         <ProjectItem
           img={textImg}
