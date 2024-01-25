@@ -14,7 +14,7 @@
 
 This single-page application is my own personal portfolio. The sections are: about me, contacting me, a portfolio of my current work and a resume. Along with my portfolio being for future employers another motivation is being able to hare my work with other developers and collaborate on projects. The way in which my portfolio has the ability to stand out to future employers, is through my application of React, showing my use of the latest technologies.
   
-Below is a video and images of the application:
+Below is a link to the application:
   
 [React-Portfolio](https://main--boisterous-dango-5d57d9.netlify.app/)
 <br>
