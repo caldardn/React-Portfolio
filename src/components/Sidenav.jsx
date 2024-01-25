@@ -62,8 +62,8 @@ const Sidenav = () => {
         ""
       )}
 
-      <div id="sideNav" className="sm:hidden md:block fixed top-[25%] left-[-1.0%] z-10">
-        <div className="flex flex-col  ">
+      <div id="sideNav" className="dc:block cd:hidden fixed top-[25%] left-[-1.0%] z-10">
+        <div className="flex flex-col">
           <a
             href="#main"
             onClick={() => setActiveLink("main")}

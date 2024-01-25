@@ -38,7 +38,7 @@ const Main = () => {
             repeat={Infinity}
           />
         </h2>
-        <div className="text-white flex justify-between space-x-7 pt-6 max-w-[100px] w-full">
+        <div className="text-white flex items-center space-x-7 pt-6 max-w-[100px] w-full">
           <a href="https://github.com/caldardn" target="_blank" rel="noopener noreferrer">
             <FaGithub className="cursor-pointer" size={50} />
           </a>

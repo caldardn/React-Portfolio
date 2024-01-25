@@ -5,9 +5,10 @@ export default {
 ],
   theme: {
     extend: {
-      // screens: {
-      //   'xs': '639px',
-      // },
+      screens: {
+        'dc': '768px',
+        'cd': '0px'
+      },
     },
   },
   plugins: [],
