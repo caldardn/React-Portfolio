@@ -17,7 +17,7 @@ const Main = () => {
     >
 
       
-      <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+      <div className="flex flex-col items-center justify-center min-h-screen m-auto">
         <h1 className="sm:text-5xl text-4xl font-bold text-white flex justify-center">I'm David Caldarone</h1>
         <h2 className="text-white sm:text-3xl text-2xl pt-4 text-grey-800">
           I'm a
@@ -38,7 +38,7 @@ const Main = () => {
             repeat={Infinity}
           />
         </h2>
-        <div className="text-white flex items-center space-x-7 pt-6 max-w-[100px] w-full">
+        <div className="text-white flex items-center space-x-7 pt-6 justify-center w-full">
           <a href="https://github.com/caldardn" target="_blank" rel="noopener noreferrer">
             <FaGithub className="cursor-pointer" size={50} />
           </a>
