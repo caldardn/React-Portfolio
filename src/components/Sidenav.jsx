@@ -27,19 +27,23 @@ const Sidenav = () => {
         className="fixed top-4 right-4 z-[99] md:hidden"
       />
       {nav ? (
-        <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
+        <div className="fixed w-full h-screen bg-gray-300/90 flex flex-col justify-center items-center z-20">
           <NavLink
             onClick={handleNav}
             to="/"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200 ${
+              location.pathname === "/" ? "bg-indigo-500 text-white" : ""
+            }`}
           >
             <AiOutlineHome size={20} />
-            <span className="pl-4">Home</span>
+            <span className="pl-4 ">Home</span>
           </NavLink>
           <NavLink
             onClick={handleNav}
             to="/work"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200 ${
+              location.pathname === "/work" ? "bg-indigo-500 text-white" : ""
+            }`}
           >
             <GrProjects size={20} />
             <span className="pl-4">Work</span>
@@ -47,7 +51,9 @@ const Sidenav = () => {
           <NavLink
             onClick={handleNav}
             to="/projects"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200 ${
+              location.pathname === "/projects" ? "bg-indigo-500 text-white" : ""
+            }`}
           >
             <AiOutlineProject size={20} />
             <span className="pl-4">Projects</span>
@@ -55,7 +61,9 @@ const Sidenav = () => {
           <NavLink
             onClick={handleNav}
             to="/contact"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200 "
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200 ${
+              location.pathname === "/contact" ? "bg-indigo-500 text-white" : ""
+            }`}
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>

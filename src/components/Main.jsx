@@ -33,7 +33,7 @@ const Main = () => {
               1000,
             ]}
             wrapper="span"
-            speed={50}
+            speed={30}
             style={{ fontSize: "1em", padding: "5px" }}
             repeat={Infinity}
           />
