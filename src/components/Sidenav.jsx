@@ -9,6 +9,7 @@ import { GrProjects } from "react-icons/gr";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
@@ -18,6 +19,20 @@ const Sidenav = () => {
     setNav(!nav);
     console.log("state changed");
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setNav(false); // Close the hamburger menu directly
+      }
+    };
+  
+    document.addEventListener('keydown', handleKeyDown);
+  
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <div id="hamburgerTab">
