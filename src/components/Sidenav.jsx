@@ -8,7 +8,7 @@ import {
 import { GrProjects } from "react-icons/gr";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
@@ -28,39 +28,38 @@ const Sidenav = () => {
       />
       {nav ? (
         <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
-          <a
+          <NavLink
             onClick={handleNav}
-            href="/"
+            to="/"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineHome size={20} />
             <span className="pl-4">Home</span>
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             onClick={handleNav}
-            href="/work"
+            to="/work"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <GrProjects size={20} />
             <span className="pl-4">Work</span>
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             onClick={handleNav}
-            href="/projects"
+            to="/projects"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
             <span className="pl-4">Projects</span>
-          </a>
-
-          <a
+          </NavLink>
+          <NavLink
             onClick={handleNav}
-            href="/contact"
-            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200"
+            to="/contact"
+            className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-grey-400 m-1 p-2 cursor-pointer hover:scale-110 ease-in duration-200 "
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>
-          </a>
+          </NavLink>
         </div>
       ) : (
         ""
@@ -73,8 +72,9 @@ const Sidenav = () => {
         <div className="flex flex-col">
           <NavLink
             to="/"
-            
-            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${location.pathname === '/' ? 'bg-indigo-500 text-white' : ''}`}
+            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${
+              location.pathname === "/" ? "bg-indigo-500 text-white" : ""
+            }`}
           >
             <div className="group-hover:opacity-100 transition-opacity">
               <AiOutlineHome size={20} />
@@ -84,8 +84,11 @@ const Sidenav = () => {
 
           <NavLink
             to="/projects"
-            
-            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${location.pathname === '/projects' ? 'bg-indigo-500 text-white' : ''}`}
+            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${
+              location.pathname === "/projects"
+                ? "bg-indigo-500 text-white"
+                : ""
+            }`}
           >
             <div>
               <AiOutlineProject size={20} />
@@ -95,8 +98,9 @@ const Sidenav = () => {
 
           <NavLink
             to="/work"
-          
-            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${location.pathname === '/work' ? 'bg-indigo-500 text-white' : ''}`}
+            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${
+              location.pathname === "/work" ? "bg-indigo-500 text-white" : ""
+            }`}
           >
             <div className="group-hover:opacity-100 transition-opacity">
               <GrProjects size={20} />
@@ -106,8 +110,11 @@ const Sidenav = () => {
 
           <NavLink
             to="/contact"
-          
-            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${location.pathname === '/contact' ? 'bg-indigo-500 text-white' : ''}`}
+            className={`flex items-center rounded-full shadow-lg bg-gray-100 m-5 p-2 cursor-pointer hover:scale-110 ease-in duration-200 group ${
+              location.pathname === "/contact"
+                ? "bg-indigo-500  text-white"
+                : ""
+            }`}
           >
             <div>
               <AiOutlineMail size={20} />
