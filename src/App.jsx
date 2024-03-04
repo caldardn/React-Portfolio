@@ -25,11 +25,3 @@ function App() {
 }
 
 export default App
-{/* <div>
-<Sidenav />
-<Main />
-<Projects />  
-<Work />
-<Contact />
-<Footer />
-</div> */}
