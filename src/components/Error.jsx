@@ -6,7 +6,7 @@ const ErrorPage = () => {
       id="error-page"
       className="flex flex-col items-center justify-center h-screen bg-gray-200"
     >
-      <div className="text-center">
+      <div className="text-center p-3">
         <h1 className="font-bold text-7xl">404</h1>
         <br />
         <img
