@@ -6,7 +6,7 @@ const ErrorPage = () => {
       <div className="text-center">
       <h1 className="font-bold text-7xl">404</h1>
       <br />
-      <img src={dogConfused} alt="Confused Dog" className="rounded-30 shadow-xl shadow-gray-400" />
+      <img src={dogConfused} alt="Confused Dog" className="rounded-30 shadow-xl shadow-gray-400 mx-auto" />
       <br />
       <p className="font-bold text-2xl">Oh, man. How did you end up here?</p>
       </div>
