@@ -10,6 +10,10 @@ export default {
         'cd': '0px',
         
       },
+      borderRadius: {
+        '30': '30%',
+      },
+
     },
   },
   plugins: [],

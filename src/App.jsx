@@ -5,22 +5,44 @@ import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ErrorPage from './components/Error'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-function App() {
-  
 
+const Layout = ({ children }) => (
+  <>
+    <Sidenav />
+    {children}
+    <Footer />
+  </>
+);
+
+function App() {
   return (
     <Router>
-      <Sidenav />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={
+          <Layout>
+            <Main />
+          </Layout>
+        } />
+        <Route path="/work" element={
+          <Layout>
+            <Work />
+          </Layout>
+        } />
+        <Route path="/projects" element={
+          <Layout>
+            <Projects />
+          </Layout>
+        } />
+        <Route path="/contact" element={
+          <Layout>
+            <Contact />
+          </Layout>
+        } />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer />
     </Router>
-
   )
 }
 

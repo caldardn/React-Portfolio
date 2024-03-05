@@ -53,6 +53,7 @@ const Work = () => {
           details={item.details}
         />
       ))}
+      <br />
       <a href={pdf} className="bg-[#001b5e] text-white mt-4 w-fell p-4 rounded-lg">
             Download Resume
         </a>
