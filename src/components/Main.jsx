@@ -4,21 +4,11 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="main"
-    style={{
-      backgroundImage: `url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: '100%',
-      height: '100vh',
-      
-    }}
-    
-    >
-
-      
+    <div id="main" className="bg-main-bg bg-cover bg-center w-full h-screen">
       <div className="flex flex-col items-center justify-center min-h-screen m-auto">
-        <h1 className="sm:text-5xl text-4xl font-bold text-white flex justify-center">I'm David Caldarone</h1>
+        <h1 className="sm:text-5xl text-4xl font-bold text-white flex justify-center">
+          I'm David Caldarone
+        </h1>
         <h2 className="text-white sm:text-3xl text-2xl pt-4 text-grey-800">
           I'm a
           <TypeAnimation
@@ -39,13 +29,25 @@ const Main = () => {
           />
         </h2>
         <div className="text-white flex items-center space-x-7 pt-6 justify-center w-full">
-          <a href="https://github.com/caldardn" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/caldardn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub className="cursor-pointer" size={50} />
           </a>
-          <a href="https://www.linkedin.com/in/david-caldarone-051563125/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/david-caldarone-051563125/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin className="cursor-pointer" size={50} />
           </a>
-          <a href="https://www.facebook.com/David.WaitForIt.Caldarone" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/David.WaitForIt.Caldarone"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaFacebook className="cursor-pointer" size={50} />
           </a>
         </div>
