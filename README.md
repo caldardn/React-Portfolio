@@ -1,9 +1,9 @@
 <h1 align="center"> React-Portfolio</h1>
   
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/caldardn/social-network-api" />
-    <img src="https://img.shields.io/github/issues/caldardn/social-network-api" />
-    <img src="https://img.shields.io/github/last-commit/caldardn/social-network-api" >
+    <img src="https://img.shields.io/github/repo-size/caldardn/React-Portfolio" />
+    <img src="https://img.shields.io/github/issues/caldardn/React-Portfolio" />
+    <img src="https://img.shields.io/github/last-commit/caldardn/React-Portfolio" >
     <a href="https://github.com/caldardn"><img src="https://img.shields.io/github/followers/caldardn?style=social" target="_blank" /></a>
 
 </p>
