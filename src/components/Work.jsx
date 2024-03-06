@@ -54,9 +54,12 @@ const Work = () => {
         />
       ))}
       <br />
-      <a href={pdf} className="bg-[#001b5e] text-white mt-4 w-fell p-4 rounded-lg">
+      <div>
+      <a href={pdf} className="bg-[#001b5e] text-white mt-4 p-4 rounded-lg hover:bg-blue-700">
             Download Resume
         </a>
+      </div>
+      
     </div>
     
   );

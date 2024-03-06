@@ -20,7 +20,7 @@ const ErrorPage = () => {
       <br />
       <a
         href="https://main--boisterous-dango-5d57d9.netlify.app/"
-        className="bg-[#001b5e] text-white mt-4 w-fell p-7 rounded-lg text-2xl"
+        className="bg-[#001b5e] text-white mt-4 p-7 rounded-lg text-2xl hover:bg-blue-700"
       >
         Back To Home
       </a>

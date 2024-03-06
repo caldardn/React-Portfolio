@@ -9,7 +9,7 @@ const ProjectItem = ({img, title, link}) => {
                     {title}
                 </h3>
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                    <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg">More Info</p>
+                    <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg transform hover:scale-110 ease-in duration-200">More Info</p>
                 </a>
             </div>
         </div>
