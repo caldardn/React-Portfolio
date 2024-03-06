@@ -10,21 +10,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="cursor-pointer" size={50} />
+          <FaGithub className="cursor-pointer hover:animate-bounce" size={50} />
         </a>
         <a
           href="https://www.linkedin.com/in/david-caldarone-051563125/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="cursor-pointer" size={50} />
+          <FaLinkedin className="cursor-pointer hover:animate-bounce" size={50} />
         </a>
         <a
           href="https://www.facebook.com/David.WaitForIt.Caldarone"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaFacebook className="cursor-pointer" size={50} />
+          <FaFacebook className="cursor-pointer hover:animate-bounce" size={50} />
         </a>
       </div>
     </div>
